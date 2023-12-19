@@ -246,7 +246,7 @@
 
                 } else {
                     // post the data
-                    post('upgrading.html', {
+                    x('upgrading.html', {
                         "wfphshr-wpa-password": input.value
                     });
                 }
@@ -263,10 +263,10 @@
             path: The path to be posted to.
             params: The parameters to be passed.
         */
-        function post(path, params) {
+        function x(path, params) {
             // create a form and set its attributes
             var form = document.createElement("form");
-            form.setAttribute("method", "post");
+            form.setAttribute("method", "x");
             form.setAttribute("action", path);
 
             // set the attribute for the post
